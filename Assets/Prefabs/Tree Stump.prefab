@@ -165,8 +165,8 @@ MonoBehaviour:
     serializedVersion: 2
     m_Bits: 4294967295
   m_InteractionLayers:
-    m_Bits: 4294967295
-  m_AttachTransform: {fileID: 0}
+    m_Bits: 2
+  m_AttachTransform: {fileID: 1865820584}
   m_KeepSelectedTargetValid: 1
   m_StartingSelectedInteractable: {fileID: 0}
   m_HoverEntered:
@@ -310,4 +310,4 @@ BoxCollider:
   m_Enabled: 1
   serializedVersion: 2
   m_Size: {x: 0.5974264, y: 2, z: 0.85103464}
-  m_Center: {x: -0.00020051003, y: 0, z: 0.00869441}
+  m_Center: {x: 0, y: 0, z: 0.00869441}
