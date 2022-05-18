@@ -21,4 +21,12 @@ public class TreeStumpController : MonoBehaviour
     {
         Debug.Log("Hover OUT");
     }
+    public void OnSelectEnter()
+    {
+        Debug.Log("Select ENTER");
+    }
+    public void OnSelectExit()
+    {
+        Debug.Log("Select EXIT");
+    }
 }

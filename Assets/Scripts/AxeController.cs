@@ -15,4 +15,13 @@ public class AxeController : MonoBehaviour
     {
         
     }
+    private void OnCollisionEnter(Collision collision)
+    {
+        Debug.Log("Axe Collision");
+        if (collision.gameObject.CompareTag("Log"))
+        {
+            Debug.Log("Break into wood");
+            Debug.Log("Axe - Collision Collider name: " + collision.collider.name);
+        }
+    }
 }
