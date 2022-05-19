@@ -142,7 +142,6 @@ GameObject:
   - component: {fileID: 1775727832167838731}
   - component: {fileID: 1775727832167838728}
   - component: {fileID: 1775727832167838729}
-  - component: {fileID: 3811641355380778342}
   m_Layer: 11
   m_Name: Axe
   m_TagString: Axe
@@ -245,7 +244,7 @@ Rigidbody:
   m_IsKinematic: 0
   m_Interpolate: 0
   m_Constraints: 0
-  m_CollisionDetection: 0
+  m_CollisionDetection: 3
 --- !u!114 &1775727832167838729
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -326,7 +325,7 @@ MonoBehaviour:
       m_Calls: []
   m_AttachTransform: {fileID: 1775727832008814835}
   m_AttachEaseInTime: 0.15
-  m_MovementType: 1
+  m_MovementType: 0
   m_VelocityDamping: 1
   m_VelocityScale: 1
   m_AngularVelocityDamping: 1
@@ -361,15 +360,3 @@ MonoBehaviour:
   m_ForceGravityOnDetach: 0
   m_RetainTransformParent: 1
   m_AttachPointCompatibilityMode: 0
---- !u!114 &3811641355380778342
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1775727832167838726}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 710d3a60a91ba5749908e960b80f1ce1, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 

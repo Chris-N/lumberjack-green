@@ -13,20 +13,18 @@ public class TreeStumpController : MonoBehaviour
         socket = GetComponentInChildren<XRSocketInteractor>();
     }
 
-    public void OnHoverEnter()
+    public void OnSelectEnter(SelectEnterEventArgs args)
     {
-        Debug.Log("Hover IN");
+        Debug.Log("Log ENTER");
+        LogController logCtrlReal = args.interactableObject.transform.gameObject.GetComponent<LogController>();
+        logCtrlReal.IsToggleReadyToChop();
     }
-    public void OnHoverExit()
+    public void OnSelectExit(SelectExitEventArgs args)
     {
-        Debug.Log("Hover OUT");
-    }
-    public void OnSelectEnter()
-    {
-        Debug.Log("Select ENTER");
-    }
-    public void OnSelectExit()
-    {
-        Debug.Log("Select EXIT");
+        Debug.Log("Log EXIT");
+
+        // TODO: Still toggles readyToChop after log destroyed
+        LogController logCtrlReal = args.interactableObject.transform.gameObject.GetComponent<LogController>();
+        logCtrlReal.IsToggleReadyToChop();
     }
 }
