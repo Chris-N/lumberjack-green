@@ -18,22 +18,17 @@ public class LogController : MonoBehaviour
     public void IsToggleReadyToChop()
     {
         IsReadyToChop = !IsReadyToChop;
-        Debug.Log("Chop? " + IsReadyToChop);
     }
 
     private void OnCollisionEnter(Collision collision)
     {
-        Debug.Log("Log Collision");
-        Debug.Log("Ready to chop? " + IsReadyToChop);
         if (collision.collider.name == Constants.BLADE)
         {
-            Debug.Log("Log - Collision Collider name: " + collision.collider.name);
             if (IsReadyToChop)
             {
                 Vector3 piecesPosition = gameObject.transform.position;
                 Instantiate(wood, piecesPosition, Quaternion.identity);
                 Instantiate(wood, piecesPosition + new Vector3(0.25f, 0, 0), Quaternion.identity);
-                Debug.Log("Break into wood");
                 Destroy(gameObject);
             }
         }

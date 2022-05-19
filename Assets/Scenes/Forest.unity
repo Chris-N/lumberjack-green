@@ -2129,22 +2129,6 @@ PrefabInstance:
       propertyPath: m_InteractionManager
       value: 
       objectReference: {fileID: 544754145}
-    - target: {fileID: 1895006485, guid: 1d8c569973fd3654fb6cd176f0251878, type: 3}
-      propertyPath: m_HoverExited.m_PersistentCalls.m_Calls.Array.data[0].m_Target
-      value: 
-      objectReference: {fileID: 0}
-    - target: {fileID: 1895006485, guid: 1d8c569973fd3654fb6cd176f0251878, type: 3}
-      propertyPath: m_HoverEntered.m_PersistentCalls.m_Calls.Array.data[0].m_Target
-      value: 
-      objectReference: {fileID: 0}
-    - target: {fileID: 1895006485, guid: 1d8c569973fd3654fb6cd176f0251878, type: 3}
-      propertyPath: m_HoverExited.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
-      value: 
-      objectReference: {fileID: 0}
-    - target: {fileID: 1895006485, guid: 1d8c569973fd3654fb6cd176f0251878, type: 3}
-      propertyPath: m_HoverEntered.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
-      value: 
-      objectReference: {fileID: 0}
     - target: {fileID: 458704108020283711, guid: 1d8c569973fd3654fb6cd176f0251878,
         type: 3}
       propertyPath: m_RootOrder
