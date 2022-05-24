@@ -21,10 +21,8 @@ public class TreeCollision : MonoBehaviour
 
     private void OnCollisionEnter(Collision collision)
     {
-        Debug.Log("NAME: " + collision.collider.name);
         if (collision.collider.name == Constants.BLADE)
         {
-            Debug.Log("Turn tree into STUMP");
             Instantiate(treeStump, gameObject.transform.position, Quaternion.identity);
 
             Vector3 logOffset = new Vector3(0, 0.92f, 0);
