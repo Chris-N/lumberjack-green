@@ -9,12 +9,6 @@ public class LogController : MonoBehaviour
 
     public bool IsReadyToChop { get; private set; }
 
-    // Start is called before the first frame update
-    void Start()
-    {
-
-    }
-
     public void IsToggleReadyToChop()
     {
         IsReadyToChop = !IsReadyToChop;
@@ -26,6 +20,7 @@ public class LogController : MonoBehaviour
         {
             if (IsReadyToChop)
             {
+                // Chopping sound
                 Vector3 piecesPosition = gameObject.transform.position;
                 Instantiate(wood, piecesPosition, Quaternion.identity);
                 Instantiate(wood, piecesPosition + new Vector3(0.25f, 0, 0), Quaternion.identity);
