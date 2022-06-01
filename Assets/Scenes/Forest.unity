@@ -1028,7 +1028,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &301066587
 Transform:
   m_ObjectHideFlags: 0
@@ -1565,8 +1565,8 @@ MonoBehaviour:
   m_Camera: {fileID: 1964712875}
   m_OriginBaseGameObject: {fileID: 333816356}
   m_CameraFloorOffsetObject: {fileID: 1881617236}
-  m_RequestedTrackingOriginMode: 0
-  m_CameraYOffset: 1.1176
+  m_RequestedTrackingOriginMode: 1
+  m_CameraYOffset: 0.5
 --- !u!4 &333816358
 Transform:
   m_ObjectHideFlags: 0
@@ -1965,7 +1965,7 @@ MonoBehaviour:
     serializedVersion: 2
     m_Bits: 4294967295
   m_InteractionLayers:
-    m_Bits: 4294967295
+    m_Bits: 7
   m_AttachTransform: {fileID: 0}
   m_KeepSelectedTargetValid: 1
   m_StartingSelectedInteractable: {fileID: 0}
@@ -3775,7 +3775,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &1020397919
 Transform:
   m_ObjectHideFlags: 0
@@ -4690,7 +4690,7 @@ MonoBehaviour:
     serializedVersion: 2
     m_Bits: 4294967295
   m_InteractionLayers:
-    m_Bits: 4294967295
+    m_Bits: 7
   m_AttachTransform: {fileID: 0}
   m_KeepSelectedTargetValid: 1
   m_StartingSelectedInteractable: {fileID: 0}
@@ -5613,7 +5613,8 @@ MonoBehaviour:
   m_UpdateTrackingType: 0
   m_EnableInputTracking: 1
   m_EnableInputActions: 1
-  m_ModelPrefab: {fileID: 0}
+  m_ModelPrefab: {fileID: 8999501270006441047, guid: 9fe8dd25cad2cc14cbc844fb635c59fe,
+    type: 3}
   m_ModelParent: {fileID: 0}
   m_Model: {fileID: 0}
   m_AnimateModel: 0
@@ -5787,7 +5788,7 @@ SphereCollider:
   m_IsTrigger: 1
   m_Enabled: 1
   serializedVersion: 2
-  m_Radius: 0.1
+  m_Radius: 0.2
   m_Center: {x: 0, y: 0, z: 0}
 --- !u!1001 &1393399144
 PrefabInstance:
@@ -7643,7 +7644,8 @@ MonoBehaviour:
   m_UpdateTrackingType: 0
   m_EnableInputTracking: 1
   m_EnableInputActions: 1
-  m_ModelPrefab: {fileID: 0}
+  m_ModelPrefab: {fileID: 8999501270006441047, guid: 04ef22db7ddf84442bb3adc8a6bb05da,
+    type: 3}
   m_ModelParent: {fileID: 0}
   m_Model: {fileID: 0}
   m_AnimateModel: 0
@@ -7817,7 +7819,7 @@ SphereCollider:
   m_IsTrigger: 1
   m_Enabled: 1
   serializedVersion: 2
-  m_Radius: 0.1
+  m_Radius: 0.2
   m_Center: {x: 0, y: 0, z: 0}
 --- !u!1001 &1890033376
 PrefabInstance:
@@ -9005,7 +9007,7 @@ PrefabInstance:
     - target: {fileID: 1775727832167838732, guid: 2f9bcad6bd10999428a9e99ad09876da,
         type: 3}
       propertyPath: m_LocalPosition.x
-      value: 103.826996
+      value: 104.433
       objectReference: {fileID: 0}
     - target: {fileID: 1775727832167838732, guid: 2f9bcad6bd10999428a9e99ad09876da,
         type: 3}
@@ -9015,7 +9017,7 @@ PrefabInstance:
     - target: {fileID: 1775727832167838732, guid: 2f9bcad6bd10999428a9e99ad09876da,
         type: 3}
       propertyPath: m_LocalPosition.z
-      value: 74.13
+      value: 75.317
       objectReference: {fileID: 0}
     - target: {fileID: 1775727832167838732, guid: 2f9bcad6bd10999428a9e99ad09876da,
         type: 3}
