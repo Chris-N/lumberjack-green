@@ -1889,6 +1889,7 @@ GameObject:
   - component: {fileID: 333816361}
   - component: {fileID: 333816363}
   - component: {fileID: 333816364}
+  - component: {fileID: 333816365}
   m_Layer: 8
   m_Name: XR Origin
   m_TagString: Player
@@ -1978,6 +1979,47 @@ CharacterController:
   m_SkinWidth: 0.08
   m_MinMoveDistance: 0.001
   m_Center: {x: 0, y: 0, z: 0}
+--- !u!114 &333816365
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 333816356}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2d98adb0ad1fffa45afaa018ae4bebfe, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  action:
+    m_Name: Action
+    m_Type: 0
+    m_ExpectedControlType: 
+    m_Id: 16b39393-a8a5-43c8-ba08-4122340d6a35
+    m_Processors: 
+    m_Interactions: 
+    m_SingletonActionBindings: []
+    m_Flags: 0
+  actionRef: {fileID: 7147518032486870132, guid: c348712bda248c246b8c49b3db54643f,
+    type: 3}
+  OnPress:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 724231311}
+        m_TargetAssemblyTypeName: ToggleSettings, Assembly-CSharp
+        m_MethodName: Toggle
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 1
+        m_CallState: 2
+  OnRelease:
+    m_PersistentCalls:
+      m_Calls: []
 --- !u!1001 &336528792
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -3321,13 +3363,14 @@ GameObject:
   - component: {fileID: 724231308}
   - component: {fileID: 724231307}
   - component: {fileID: 724231306}
+  - component: {fileID: 724231311}
   m_Layer: 5
   m_Name: Canvas Setting
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!114 &724231306
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -3429,6 +3472,18 @@ RectTransform:
   m_AnchoredPosition: {x: 118.5, y: 2.62}
   m_SizeDelta: {x: 445, y: 265.9}
   m_Pivot: {x: 0.5, y: 0.5}
+--- !u!114 &724231311
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 724231305}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 49138f2b8750ac440bbbf39610f5bdfb, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1001 &788069464
 PrefabInstance:
   m_ObjectHideFlags: 0
