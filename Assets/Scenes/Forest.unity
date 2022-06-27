@@ -410,7 +410,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: Locomotion
+  m_text: Continuous
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
@@ -1410,9 +1410,9 @@ MonoBehaviour:
     m_Curve:
     - serializedVersion: 3
       time: 0
-      value: 1
-      inSlope: 0
-      outSlope: 0
+      value: 0
+      inSlope: 2
+      outSlope: 2
       tangentMode: 0
       weightedMode: 0
       inWeight: 0
@@ -1490,7 +1490,8 @@ MonoBehaviour:
   m_SmoothMovement: 0
   m_FollowTightness: 10
   m_SnapThresholdDistance: 10
-  m_Reticle: {fileID: 0}
+  m_Reticle: {fileID: 6902160514540323085, guid: ede225f5f7d28cc4983cdb6936090ec5,
+    type: 3}
   m_StopLineAtFirstRaycastHit: 1
 --- !u!120 &301066589
 LineRenderer:
@@ -1669,7 +1670,7 @@ MonoBehaviour:
   m_PlayHapticsOnHoverCanceled: 0
   m_HapticHoverCancelIntensity: 0
   m_HapticHoverCancelDuration: 0
-  m_LineType: 0
+  m_LineType: 2
   m_BlendVisualLinePoints: 1
   m_MaxRaycastDistance: 30
   m_RayOriginTransform: {fileID: 0}
@@ -1679,7 +1680,7 @@ MonoBehaviour:
   m_AdditionalGroundHeight: 0.1
   m_AdditionalFlightTime: 0.5
   m_EndPointDistance: 30
-  m_EndPointHeight: -10
+  m_EndPointHeight: -40
   m_ControlPointDistance: 10
   m_ControlPointHeight: 5
   m_SampleFrequency: 20
@@ -1991,15 +1992,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 2d98adb0ad1fffa45afaa018ae4bebfe, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  action:
-    m_Name: Action
-    m_Type: 0
-    m_ExpectedControlType: 
-    m_Id: 16b39393-a8a5-43c8-ba08-4122340d6a35
-    m_Processors: 
-    m_Interactions: 
-    m_SingletonActionBindings: []
-    m_Flags: 0
   actionRef: {fileID: 7147518032486870132, guid: c348712bda248c246b8c49b3db54643f,
     type: 3}
   OnPress:
@@ -2938,8 +2930,7 @@ RectTransform:
   - {fileID: 1400679944}
   - {fileID: 2130874163}
   - {fileID: 802254753}
-  - {fileID: 2055853909}
-  - {fileID: 1613453616}
+  - {fileID: 1188939342}
   m_Father: {fileID: 724231310}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -3193,7 +3184,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: Ray Casting
+  m_text: Teleporting
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
@@ -3370,7 +3361,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!114 &724231306
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -4843,9 +4834,9 @@ MonoBehaviour:
     m_Curve:
     - serializedVersion: 3
       time: 0
-      value: 1
-      inSlope: 0
-      outSlope: 0
+      value: 0
+      inSlope: 2
+      outSlope: 2
       tangentMode: 0
       weightedMode: 0
       inWeight: 0
@@ -4923,7 +4914,8 @@ MonoBehaviour:
   m_SmoothMovement: 0
   m_FollowTightness: 10
   m_SnapThresholdDistance: 10
-  m_Reticle: {fileID: 0}
+  m_Reticle: {fileID: 6902160514540323085, guid: ede225f5f7d28cc4983cdb6936090ec5,
+    type: 3}
   m_StopLineAtFirstRaycastHit: 1
 --- !u!120 &1020397921
 LineRenderer:
@@ -6539,6 +6531,58 @@ Transform:
     type: 3}
   m_PrefabInstance: {fileID: 1188821592}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &1188939341
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1188939342}
+  - component: {fileID: 1188939343}
+  m_Layer: 5
+  m_Name: Toggle Movement Group
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!224 &1188939342
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1188939341}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0.00014222106}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children:
+  - {fileID: 2055853909}
+  - {fileID: 1613453616}
+  m_Father: {fileID: 568983842}
+  m_RootOrder: 5
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0.5, y: 0.5}
+  m_AnchorMax: {x: 0.5, y: 0.5}
+  m_AnchoredPosition: {x: 102.00004, y: 34.000023}
+  m_SizeDelta: {x: 100, y: 100}
+  m_Pivot: {x: 0.5, y: 0.5}
+--- !u!114 &1188939343
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1188939341}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2fafe2cfe61f6974895a912c3755e8f1, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_AllowSwitchOff: 0
 --- !u!1 &1220525477
 GameObject:
   m_ObjectHideFlags: 0
@@ -7268,7 +7312,7 @@ MonoBehaviour:
     m_PressedTrigger: Pressed
     m_SelectedTrigger: Selected
     m_DisabledTrigger: Disabled
-  m_Interactable: 1
+  m_Interactable: 0
   m_TargetGraphic: {fileID: 789453253}
   toggleTransition: 1
   graphic: {fileID: 1479314864}
@@ -7905,7 +7949,7 @@ GameObject:
   - component: {fileID: 1613453616}
   - component: {fileID: 1613453617}
   m_Layer: 5
-  m_Name: Toggle Ray Casting
+  m_Name: Toggle Teleporting
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -7919,18 +7963,18 @@ RectTransform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1613453615}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalPosition: {x: 0, y: 0, z: -0.000042666317}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 1097623118}
   - {fileID: 715995450}
-  m_Father: {fileID: 568983842}
-  m_RootOrder: 6
+  m_Father: {fileID: 1188939342}
+  m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 117.9, y: -41.8}
+  m_AnchoredPosition: {x: 15.899963, y: -75.800026}
   m_SizeDelta: {x: 160, y: 20}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1613453617
@@ -7976,10 +8020,22 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 1097623119}
   toggleTransition: 1
   graphic: {fileID: 193906916}
-  m_Group: {fileID: 0}
+  m_Group: {fileID: 1188939343}
   onValueChanged:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 1810259991}
+        m_TargetAssemblyTypeName: LocomotionManager, Assembly-CSharp
+        m_MethodName: SetTeleport
+        m_Mode: 0
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
   m_IsOn: 0
 --- !u!1 &1655521366
 GameObject:
@@ -8806,6 +8862,7 @@ GameObject:
   - component: {fileID: 1810259988}
   - component: {fileID: 1810259987}
   - component: {fileID: 1810259990}
+  - component: {fileID: 1810259991}
   m_Layer: 8
   m_Name: Locomotion System
   m_TagString: Untagged
@@ -8942,6 +8999,20 @@ MonoBehaviour:
       m_Flags: 0
     m_Reference: {fileID: -8198699208435500284, guid: c348712bda248c246b8c49b3db54643f,
       type: 3}
+--- !u!114 &1810259991
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1810259985}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4c44a72070c97c64f97f29d295a8217c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  leftRay: {fileID: 506608768}
+  leftTeleportRay: {fileID: 301066586}
 --- !u!1001 &1826694187
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -10570,7 +10641,7 @@ GameObject:
   - component: {fileID: 2055853909}
   - component: {fileID: 2055853910}
   m_Layer: 5
-  m_Name: Toggle Locomotion
+  m_Name: Toggle Continuous
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -10584,18 +10655,18 @@ RectTransform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2055853908}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0.00009866586}
+  m_LocalPosition: {x: 0, y: 0, z: -0.000042666317}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 1087446081}
   - {fileID: 101406943}
-  m_Father: {fileID: 568983842}
-  m_RootOrder: 5
+  m_Father: {fileID: 1188939342}
+  m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 117.90014, y: 2.1999989}
+  m_AnchoredPosition: {x: 15.900101, y: -31.800024}
   m_SizeDelta: {x: 160, y: 20}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &2055853910
@@ -10641,10 +10712,22 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 1087446082}
   toggleTransition: 1
   graphic: {fileID: 1655521368}
-  m_Group: {fileID: 0}
+  m_Group: {fileID: 1188939343}
   onValueChanged:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 1810259991}
+        m_TargetAssemblyTypeName: LocomotionManager, Assembly-CSharp
+        m_MethodName: SetContinuous
+        m_Mode: 0
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
   m_IsOn: 1
 --- !u!1001 &2066084509
 PrefabInstance:
@@ -11027,7 +11110,7 @@ MonoBehaviour:
     m_PressedTrigger: Pressed
     m_SelectedTrigger: Selected
     m_DisabledTrigger: Disabled
-  m_Interactable: 1
+  m_Interactable: 0
   m_TargetGraphic: {fileID: 1527400350}
   toggleTransition: 1
   graphic: {fileID: 1871519312}
