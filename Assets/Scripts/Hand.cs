@@ -7,9 +7,11 @@ using UnityEngine.InputSystem;
 [RequireComponent(typeof(Animator))]
 public class Hand : MonoBehaviour
 {
-    [SerializeField] float speed;
+    [SerializeField] float _speed;
 
     Animator _animator;
+    SkinnedMeshRenderer _mesh;
+
     float _gripCurrent;
     float _triggerCurrent;
     float _triggerTarget;
@@ -19,6 +21,7 @@ public class Hand : MonoBehaviour
     void Start()
     {
         _animator = GetComponent<Animator>();
+        //_mesh = GetComponentInChildren<SkinnedMeshRenderer>();
     }
 
     // Update is called once per frame
@@ -31,8 +34,13 @@ public class Hand : MonoBehaviour
     {
         if(_gripCurrent != _gripTarget)
         {
-            _gripCurrent = Mathf.MoveTowards(_gripCurrent, _gripTarget, Time.deltaTime * speed);
+            _gripCurrent = Mathf.MoveTowards(_gripCurrent, _gripTarget, Time.deltaTime * _speed);
             _animator.SetFloat("Grip", _gripCurrent);
+        }
+        if(_triggerCurrent != _triggerTarget)
+        {
+            _triggerCurrent = Mathf.MoveTowards(_triggerCurrent, _triggerTarget, Time.deltaTime * _speed);
+            _animator.SetFloat("Trigger", _triggerCurrent);
         }
     }
 
@@ -44,5 +52,10 @@ public class Hand : MonoBehaviour
     internal void SetTrigger(float triggerTarget)
     {
         _triggerTarget = triggerTarget;
+    }
+
+    public void ToggleVisiblity()
+    {
+        //_mesh.enabled = !_mesh.enabled;
     }
 }
