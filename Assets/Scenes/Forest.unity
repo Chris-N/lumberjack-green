@@ -2183,6 +2183,7 @@ GameObject:
   - component: {fileID: 506608772}
   - component: {fileID: 506608771}
   - component: {fileID: 506608770}
+  - component: {fileID: 506608774}
   m_Layer: 0
   m_Name: LeftRay Controller
   m_TagString: Untagged
@@ -2692,6 +2693,19 @@ MonoBehaviour:
     m_Reference: {fileID: 7779212132400271959, guid: c348712bda248c246b8c49b3db54643f,
       type: 3}
   m_ButtonPressPoint: 0.5
+--- !u!114 &506608774
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 506608768}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4418d77a5055944439206061d1fb7d30, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  hand: {fileID: 2049950499}
 --- !u!1001 &530873047
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -3557,7 +3571,7 @@ PrefabInstance:
     - target: {fileID: 919132149155446097, guid: 5590efbdb20564f4fa6c7f60d718e974,
         type: 3}
       propertyPath: m_IsActive
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 5590efbdb20564f4fa6c7f60d718e974, type: 3}
@@ -3577,7 +3591,7 @@ Animator:
   m_GameObject: {fileID: 543650245}
   m_Enabled: 1
   m_Avatar: {fileID: 9000000, guid: 5590efbdb20564f4fa6c7f60d718e974, type: 3}
-  m_Controller: {fileID: 9100000, guid: ee09fe65dac8115449d650318e8d7000, type: 2}
+  m_Controller: {fileID: 9100000, guid: 0de06677a9262e04c8ea14b37c497265, type: 2}
   m_CullingMode: 0
   m_UpdateMode: 0
   m_ApplyRootMotion: 0
@@ -3587,6 +3601,19 @@ Animator:
   m_HasTransformHierarchy: 1
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorControllerStateOnDisable: 0
+--- !u!114 &727835204
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 543650245}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c95753ab75f6654499965422a7d8392b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  speed: 10
 --- !u!1001 &788069464
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -5740,6 +5767,7 @@ GameObject:
   - component: {fileID: 1124598601}
   - component: {fileID: 1124598600}
   - component: {fileID: 1124598599}
+  - component: {fileID: 1124598603}
   m_Layer: 0
   m_Name: RightRay Controller
   m_TagString: Untagged
@@ -6249,6 +6277,19 @@ MonoBehaviour:
     m_Reference: {fileID: 875253871413052681, guid: c348712bda248c246b8c49b3db54643f,
       type: 3}
   m_ButtonPressPoint: 0.5
+--- !u!114 &1124598603
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1124598597}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4418d77a5055944439206061d1fb7d30, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  hand: {fileID: 727835204}
 --- !u!1001 &1145937200
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -7417,7 +7458,7 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Controller
       value: 
-      objectReference: {fileID: 9100000, guid: 4c746057eaa336941a724c7c88c02b00, type: 2}
+      objectReference: {fileID: 9100000, guid: 0de06677a9262e04c8ea14b37c497265, type: 2}
     - target: {fileID: 6347406346396362103, guid: 5590efbdb20564f4fa6c7f60d718e974,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -11623,6 +11664,25 @@ Transform:
     type: 3}
   m_PrefabInstance: {fileID: 2048217750}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &2049950498 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 919132149155446097, guid: 5590efbdb20564f4fa6c7f60d718e974,
+    type: 3}
+  m_PrefabInstance: {fileID: 1212918371}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &2049950499
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2049950498}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c95753ab75f6654499965422a7d8392b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  speed: 10
 --- !u!1 &2055853908
 GameObject:
   m_ObjectHideFlags: 0
