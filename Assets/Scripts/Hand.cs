@@ -21,7 +21,7 @@ public class Hand : MonoBehaviour
     void Start()
     {
         _animator = GetComponent<Animator>();
-        //_mesh = GetComponentInChildren<SkinnedMeshRenderer>();
+        _mesh = GetComponentInChildren<SkinnedMeshRenderer>();
     }
 
     // Update is called once per frame
@@ -56,6 +56,6 @@ public class Hand : MonoBehaviour
 
     public void ToggleVisiblity()
     {
-        //_mesh.enabled = !_mesh.enabled;
+        _mesh.enabled = !_mesh.enabled;
     }
 }
