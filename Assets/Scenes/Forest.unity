@@ -135,6 +135,7 @@ GameObject:
   - component: {fileID: 12233764}
   - component: {fileID: 12233763}
   - component: {fileID: 12233762}
+  - component: {fileID: 12233766}
   m_Layer: 5
   m_Name: Forest Tooltip
   m_TagString: Untagged
@@ -224,6 +225,25 @@ RectTransform:
   m_AnchoredPosition: {x: 94.56, y: 2.75}
   m_SizeDelta: {x: 877.4, y: 685.8}
   m_Pivot: {x: 0.5, y: 0.5}
+--- !u!114 &12233766
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 12233761}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7951c64acb0fa62458bf30a60089fe2d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_IgnoreReversedGraphics: 0
+  m_CheckFor2DOcclusion: 0
+  m_CheckFor3DOcclusion: 0
+  m_BlockingMask:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_RaycastTriggerInteraction: 1
 --- !u!1001 &31218033
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -742,6 +762,7 @@ GameObject:
   - component: {fileID: 150685048}
   - component: {fileID: 150685047}
   - component: {fileID: 150685046}
+  - component: {fileID: 150685050}
   m_Layer: 5
   m_Name: Chopping Tooltip
   m_TagString: Untagged
@@ -831,6 +852,25 @@ RectTransform:
   m_AnchoredPosition: {x: 103.05, y: 1.87}
   m_SizeDelta: {x: 877.4, y: 685.8}
   m_Pivot: {x: 0.5, y: 0.5}
+--- !u!114 &150685050
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 150685045}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7951c64acb0fa62458bf30a60089fe2d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_IgnoreReversedGraphics: 0
+  m_CheckFor2DOcclusion: 0
+  m_CheckFor3DOcclusion: 0
+  m_BlockingMask:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_RaycastTriggerInteraction: 1
 --- !u!1001 &151132789
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -2654,6 +2694,7 @@ GameObject:
   - component: {fileID: 409568637}
   - component: {fileID: 409568636}
   - component: {fileID: 409568635}
+  - component: {fileID: 409568639}
   m_Layer: 5
   m_Name: Collector Tooltip
   m_TagString: Untagged
@@ -2743,6 +2784,25 @@ RectTransform:
   m_AnchoredPosition: {x: 83.563, y: 1.77}
   m_SizeDelta: {x: 877.4, y: 685.8}
   m_Pivot: {x: 0.5, y: 0.5}
+--- !u!114 &409568639
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 409568634}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7951c64acb0fa62458bf30a60089fe2d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_IgnoreReversedGraphics: 0
+  m_CheckFor2DOcclusion: 0
+  m_CheckFor3DOcclusion: 0
+  m_BlockingMask:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_RaycastTriggerInteraction: 1
 --- !u!1001 &426846394
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -4555,7 +4615,7 @@ MonoBehaviour:
   m_text: 'Turn logs into lumber.
 
 
-    Place on tree stump then use axe'
+    Place log on tree stump then use axe'
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
@@ -9827,7 +9887,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 1322243561}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 150685045}
+        m_TargetAssemblyTypeName: UnityEngine.GameObject, UnityEngine
+        m_MethodName: SetActive
+        m_Mode: 6
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &1322243561
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -11758,7 +11830,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 1715098189}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 12233761}
+        m_TargetAssemblyTypeName: UnityEngine.GameObject, UnityEngine
+        m_MethodName: SetActive
+        m_Mode: 6
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &1715098189
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -14409,7 +14493,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 1995646562}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 409568634}
+        m_TargetAssemblyTypeName: UnityEngine.GameObject, UnityEngine
+        m_MethodName: SetActive
+        m_Mode: 6
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &1995646562
 MonoBehaviour:
   m_ObjectHideFlags: 0
