@@ -30,8 +30,8 @@ public class OnButtonPress : MonoBehaviour
         //action.started -= Pressed;
         //action.canceled -= Released;
 
-        actionRef.action.started += Pressed;
-        actionRef.action.canceled += Released;
+        actionRef.action.started -= Pressed;
+        actionRef.action.canceled -= Released;
     }
 
     private void OnEnable()

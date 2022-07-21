@@ -15,10 +15,8 @@ public class TreeCollision : MonoBehaviour
         {
             // Chopping sound
             health--;
-            Debug.Log("Health? " + health);
             if (health == 0)
             {
-                Debug.Log("CHOP");
                 Instantiate(treeStump, gameObject.transform.position, Quaternion.identity);
 
                 Vector3 logOffset = new Vector3(0, 0.92f, 0);

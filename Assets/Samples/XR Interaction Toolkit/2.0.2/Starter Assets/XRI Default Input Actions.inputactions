@@ -469,10 +469,10 @@
                 {
                     "name": "",
                     "id": "0cd87a9b-f29b-4217-9618-dc5b6e3fd856",
-                    "path": "<XRController>{LeftHand}/menuButton",
+                    "path": "<XRController>{LeftHand}/start",
                     "interactions": "",
                     "processors": "",
-                    "groups": "",
+                    "groups": "Generic XR Controller",
                     "action": "Open Settings",
                     "isComposite": false,
                     "isPartOfComposite": false
